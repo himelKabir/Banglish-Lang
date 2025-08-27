@@ -1,0 +1,39 @@
+/* Comparison and logical operator tests */
+
+shonkha a = 5;
+shonkha b = 10;
+shonkha c = 20;
+jodi ( a == 5 ) { dekhao(a); } nahole  { dekhao(b); }
+jodi ( a != b ) { dekhao(c); } nahole  { dekhao(b); }
+jodi ( a > b ) { dekhao(1002); } nahole  { dekhao(1003); }
+jodi ( a < b ) { dekhao(1002); } nahole  { dekhao(1003); }
+jodi ( a <= 5 ) { dekhao(1004); } nahole { dekhao(1005); }
+jodi ( b >= 10 ) { dekhao(1004); } nahole { dekhao(1005); }
+
+/* logical AND / OR */
+
+jodi ( a < b && b == 10 ) { dekhao(1100); } nahole  { dekhao(1003); }
+jodi ( a > b || b == 10 ) { dekhao(1101); } nahole  { dekhao(1003); }
+
+/* negation */
+
+jodi ( ! ( a == b ) ) { dekhao(1200); }  nahole  { dekhao(1003); }
+
+/* string comparisons via strlen */
+
+lekha sa = "";
+lekha sb = "hi";
+jodi ( strlen(sa) == 0 ) { dekhao(1300); }  nahole  { dekhao(1003); }
+jodi ( strlen(sb) != 0 ) { dekhao(1301); }  nahole  { dekhao(1003); }
+
+
+/* array element comparisons */
+amrtype arr = {1,2,3};
+
+jodi ( arr[0] == 1 ) { dekhao(1500); }  nahole  { dekhao(1003); }
+jodi ( arr[2] != 0 ) { dekhao(1501); }  nahole  { dekhao(1003); }
+
+/* combined complex condition */
+
+jodi ( (a < b && arr[0] == 1) || strlen(sb) ) { dekhao(1600); }  nahole  { dekhao(1003); } 
+ 

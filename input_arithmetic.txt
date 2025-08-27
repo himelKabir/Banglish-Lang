@@ -1,0 +1,14 @@
+amrtype arr = {1,2,3};
+dekhao(arr[1]);
+r = arr[0] + arr[2];
+dekhao(r);
+
+shonkha a, b, c, d, e, f, g, h; /* multi variable declearation */
+a = 20;
+b = 10;
+c = a + b;
+d = a - b;
+e = a * b;
+f = a / b;
+g = a && b;
+h = a || b;

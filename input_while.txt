@@ -1,0 +1,12 @@
+x = 0;
+jotokkhon (x < 5) {
+        dekhao(x);
+        x = x + 1; 
+}
+
+sum = 0;
+    x = 1;
+    jotokkhon (x <= 10) {
+        sum = sum + x;
+        x = x + 1;
+    }

@@ -1,0 +1,21 @@
+/* string swap */
+lekha x,y;
+x = "Himel";
+y = "Kabir";
+binimoy(x,y);
+dekhao(x);
+dekhao(y);
+
+/* number swap */
+amrtype  a = 10, b = 5;
+binimoy(a,b);
+dekhao(a);
+dekhao(b);
+
+/* array swap */ 
+akkhor x,y;
+x = 'H';
+y = 'K';
+binimoy(x,y);
+dekhao(x);
+dekhao(y);

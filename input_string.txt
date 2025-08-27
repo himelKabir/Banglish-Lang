@@ -1,0 +1,6 @@
+dekhao(strlen("helloHimel")); /*string length */
+
+s1 = "Hello ";
+s2 = "Himel";
+s3 = s1 ++ s2; /* concatination string*/
+dekhao(s3);

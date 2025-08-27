@@ -1,0 +1,47 @@
+
+function countToN() {
+    x = 0;
+    jotokkhon (x < 5) {
+        dekhao(x);
+        x = x + 1;
+    }
+}
+
+function sumToN() {
+    sum = 0;
+    x = 1;
+    jotokkhon (x <= 10) {
+        sum = sum + x;
+        x = x + 1;
+    }
+    dekhao(sum);
+    
+}
+countToN();
+function printEven() {
+    x = 0;
+    jotokkhon (x < 10) {
+        jodi (x && y == 0) {
+            dekhao(x);
+        }
+        x = x + 1;
+    }
+}
+
+function factorial() {
+    n = 5;
+    result = 1;
+    jotokkhon (n > 1) {
+        result = result * n;
+        n = n - 1;
+    }
+    dekhao(result);
+}
+sumToN();
+function reversePrint() {
+    x = 5;
+    jotokkhon (x > 0) {
+        dekhao(x);
+        x = x - 1;
+    }
+}
